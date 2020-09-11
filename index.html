@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Document</title>
+
+    <!-- css link -->
+   <link rel="stylesheet" href="css\bootstrap.min.css">
+</head>
+<body>
+
+    <button class="btn btn-primary" data-toggle="modal" data-target="#pop-up" type="button">Click</button>
+    
+    <div class="modal" id="pop-up">
+        <div class="modal-dialog  modal-dialog-scrollable">
+           
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">My Modal</h5>
+                    <button class="close" data-dismiss="modal" type="button"><span>&times;</span></button>
+
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe tempora, itaque nostrum, at dignissimos eos possimus voluptates, unde sunt eum quidem voluptatibus debitis corporis. Sint, optio. Iste in, deleniti recusandae culpa quo magni unde, minus consequuntur officia quasi praesentium? Et velit eos vel delectus beatae in, officia voluptate nulla quia, eius veniam atque quibusdam nobis expedita ducimus voluptatum cumque earum quam! Nisi, earum necessitatibus dolorem suscipit consequatur eligendi provident cumque ipsa hic similique repellendus officia odit vel dolor, harum eius. Labore culpa mollitia, consectetur perspiciatis commodi alias totam. Id dolores corporis accusamus harum ducimus distinctio unde accusantium aut commodi temporibus.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- 
+                modal-dialog-centered is center on page. If the content is more the browser page be scroll. 
+                modal-dialog-scrollable. If the content is more, the modal be scroll.
+
+                modal > modal-dialog > modal-content > (modal-header > modal-title) + modal-body + modal-footer
+                
+                data-toggle and data-target is very important.                
+    -->
+
+    <!-- Javascript files -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js\bootstrap.min.js"></script>
+</body>
+</html>
