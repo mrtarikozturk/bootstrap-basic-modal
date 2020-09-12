@@ -11,21 +11,25 @@
 
     <!-- css link -->
    <link rel="stylesheet" href="css\bootstrap.min.css">
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ />
 </head>
 <body>
 
     <button class="btn btn-primary" data-toggle="modal" data-target="#pop-up" type="button">Click</button>
     
-    <div class="modal" id="pop-up">
-        <div class="modal-dialog  modal-dialog-scrollable">
+    <div class="modal fade" role="dialog" id="pop-up">
+        <div class="modal-dialog  modal-dialog-scrollable modal-sm">
            
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">My Modal</h5>
+                    <h5 class="modal-title animate__animated animate__fadeInRight">My Modal</h5>
                     <button class="close" data-dismiss="modal" type="button"><span>&times;</span></button>
 
                 </div>
-                <div class="modal-body">
+                <div class="modal-body animate__animated animate__zoomIn">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe tempora, itaque nostrum, at dignissimos eos possimus voluptates, unde sunt eum quidem voluptatibus debitis corporis. Sint, optio. Iste in, deleniti recusandae culpa quo magni unde, minus consequuntur officia quasi praesentium? Et velit eos vel delectus beatae in, officia voluptate nulla quia, eius veniam atque quibusdam nobis expedita ducimus voluptatum cumque earum quam! Nisi, earum necessitatibus dolorem suscipit consequatur eligendi provident cumque ipsa hic similique repellendus officia odit vel dolor, harum eius. Labore culpa mollitia, consectetur perspiciatis commodi alias totam. Id dolores corporis accusamus harum ducimus distinctio unde accusantium aut commodi temporibus.
                 </div>
                 <div class="modal-footer">
@@ -41,7 +45,12 @@
 
                 modal > modal-dialog > modal-content > (modal-header > modal-title) + modal-body + modal-footer
                 
-                data-toggle and data-target is very important.                
+                data-toggle and data-target is very important.
+                
+                modal-lg, modal-xl, modal-sm ==> responsive setting
+                By default, modals are medium in size.
+                The attribute role="dialog" improves accessibility for people using screen readers.
+                The .fade class gives a transition effect. It is not required.
     -->
 
     <!-- Javascript files -->
